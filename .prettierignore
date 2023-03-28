@@ -2,5 +2,10 @@
 *.cssr.ts
 
 public
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
 
 #docs

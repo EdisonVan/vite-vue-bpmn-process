@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite --force --open",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rimraf node_modules package-lock.json yarn.lock yarn-error.log && npm cache clean -f && yarn cache clean"
   },
   "dependencies": {
     "@bpmn-io/add-exporter": "^0.2.0",

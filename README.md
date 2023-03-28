@@ -32,6 +32,7 @@ Vite Vue Bpmn流程编辑器，基于[Bpmn.js](https://github.com/bpmn-io/bpmn-j
 
 实现了 Bpmn.js 和 Diagram.js 的 typescript 类型声明，typescript 可以用来在编辑器中编写代码。
 
+<<<<<<< Updated upstream
 React 项目也可以参考自定义插件和属性更新方式。
 
 > 码云：https://gitee.com/MiyueSC/vite-vue-bpmn-process
@@ -58,6 +59,9 @@ React 项目也可以参考自定义插件和属性更新方式。
 > 也可关注公众号：MiyueFE 的前端圈
 >
 > <img alt="wechat.png" src="public/qrcode.jpg" width="200"/>
+=======
+React 项目也可以参考自定义插件和属性更新方式
+>>>>>>> Stashed changes
 
 ## 结构目录
 
@@ -193,7 +197,3 @@ React 项目也可以参考自定义插件和属性更新方式。
 ![img_5.png](docs/img_5.png)
 
 ![img_6.png](docs/img_6.png)
-
-## Licence
-
-This project is licensed under the Apache License 2.0 .

@@ -79,20 +79,6 @@
     font-weight: bold;
   }
 }
-.sponsorship-image {
-  width: 150px;
-  height: 150px;
-  background-size: 140% 140%;
-  background-position: center center;
-  display: inline-block;
-  &.wechat {
-    background-image: url('./wechat.jpg');
-  }
-  &.alipay {
-    margin-left: 8px;
-    background-image: url('./alipay.png');
-  }
-}
 
 .n-form-item.theme-list .n-form-item-blank {
   width: 100%;
