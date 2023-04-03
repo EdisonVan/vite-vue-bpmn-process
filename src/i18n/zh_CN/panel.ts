@@ -4,13 +4,10 @@ export default {
   name: '节点名称',
   version: '流程版本',
   executable: '可执行',
-
   documentationSettings: '文档设置',
   documentationBody: '文档内容',
-
   startInitiator: '启动器配置',
   initiator: '启动器',
-
   executionJob: '执行作业',
   taskPriority: '任务优先级',
   retryTimeCycle: '重试周期',

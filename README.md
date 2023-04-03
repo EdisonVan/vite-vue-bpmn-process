@@ -28,40 +28,11 @@
 
 ## 项目简介
 
-Vite Vue Bpmn流程编辑器，基于[Bpmn.js](https://github.com/bpmn-io/bpmn-js)， [Vite](https://vitejs.dev)， [Vue.js 3.x](https://vuejs.org/)。
+Vite Vue Bpmn 流程编辑器，基于[Bpmn.js](https://github.com/bpmn-io/bpmn-js)， [Vite](https://vitejs.dev)， [Vue.js 3.x](https://vuejs.org/)。
 
 实现了 Bpmn.js 和 Diagram.js 的 typescript 类型声明，typescript 可以用来在编辑器中编写代码。
 
-<<<<<<< Updated upstream
-React 项目也可以参考自定义插件和属性更新方式。
-
-> 码云：https://gitee.com/MiyueSC/vite-vue-bpmn-process
-
-> 🚀Tips:
-> 
-> Diagram.js 最近已经实现了 Type Declares 声明，具体请查看 [Diagram.js](https://github.com/bpmn-io/diagram-js) 的 **type-declarations** 分支~
-> 
-> Bpmn.js 的 Type Declares 声明 目前已经加入到 bpmn-io 团队的任务面板中，但目前处于 **积压状态**。
-
-## 友情赞助
-
-生活不易，猪猪叹气。如果对您有帮助，您可以请我喝杯咖啡。十分感谢 (毕竟这个项目还是写了几个月， typescript 部分实在是太难写了)~ ~ ~ ~
-
-<div align="left">
-<img alt="微信" src="public/wechat.jpg" width="240" style="display: inline-block"/>
-<img alt="支付宝" src="public/alipay.png" width="240" style="display: inline-block"/>
-</div>
-
-> 付费咨询联系微信：
-> 
-> <img alt="wechat.png" src="public/wechat.png" width="200"/>
-> 
-> 也可关注公众号：MiyueFE 的前端圈
->
-> <img alt="wechat.png" src="public/qrcode.jpg" width="200"/>
-=======
 React 项目也可以参考自定义插件和属性更新方式
->>>>>>> Stashed changes
 
 ## 结构目录
 
@@ -89,10 +60,10 @@ React 项目也可以参考自定义插件和属性更新方式
 |   |-- bpmn-icons                                 bpmn 对应的图标文件 svg
 |   |-- config                                     项目配置文件
 |   |-- moddle-extensions                          bpmn.js 扩展解析文件
-|       |-- activiti.json                          
+|       |-- activiti.json
 |       |-- bpmn.json                              bpmn 基础元素和属性配置
-|       |-- camunda.json                           
-|       |-- flowable.json                          
+|       |-- camunda.json
+|       |-- flowable.json
 |       |-- miyue.json                             自定义扩展配置
 |       |-- zeebe.json                             zeebe 表单配置
 |   |-- store
@@ -131,7 +102,7 @@ React 项目也可以参考自定义插件和属性更新方式
 |       |-- diagram-js-direct-editing.d.ts         diagram.js 的双击编辑类型声明文件
 |       |-- didi.d.ts                              [Nikku - didi](https://github.com/nikku/didi/blob/master/lib/index.d.ts)
 |       |-- moddle.d.ts                            moddle 的类型声明文件
-|       |-- object-refs.d.ts                       
+|       |-- object-refs.d.ts
 |   |-- editor
 |-- LICENSE
 |-- README.md
@@ -139,7 +110,7 @@ React 项目也可以参考自定义插件和属性更新方式
 |-- package.json
 |-- vite.config.js
 ```
- 
+
 > Activiti moddle json: https://github.com/Activiti/activiti-modeling-app/blob/master/projects/process-editor/src/services/activiti.json
 
 ## 当前功能
@@ -156,7 +127,7 @@ React 项目也可以参考自定义插件和属性更新方式
 
 ### 2. 编辑器
 
-- [x] 自定义流程id与名称
+- [x] 自定义流程 id 与名称
 - [x] 可选流程引擎（camunda，activiti，flowable）
 - [x] 动态背景设置
 - [x] 自定义 PaletteProvider

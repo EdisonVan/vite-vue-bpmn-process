@@ -148,6 +148,7 @@ export default function (settings: Ref<EditorSettings>) {
 
   // 设置对应的 moddle 解析配置文件 ( 避免上面已经配置了 camunda )
   if (!Object.keys(moddle).length) {
+    console.log('---settings.value.processEngine---', settings.value.processEngine)
     if (settings.value.processEngine === 'activiti') moddle['activiti'] = activitiModdleDescriptors
     if (settings.value.processEngine === 'camunda') moddle['camunda'] = camundaModdleDescriptors
     if (settings.value.processEngine === 'flowable') moddle['flowable'] = flowableModdleDescriptors
