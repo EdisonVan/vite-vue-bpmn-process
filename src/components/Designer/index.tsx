@@ -26,23 +26,19 @@ const Designer = defineComponent({
       () => editorSettings.value,
       async (value, oldValue) => {
         try {
+          console.log('---editorSettings---', editorSettings)
           const modelerModules = modulesAndModdle(editorSettings)
           await nextTick()
           initModeler(designer, modelerModules, emit)
-          if (!oldValue || value.processEngine !== oldValue!.processEngine) {
-            await createNewDiagram()
-          } else {
-            await createNewDiagram(xml.value, editorSettings.value)
-          }
+          if (!oldValue || value.processEngine !== oldValue!.processEngine) await createNewDiagram()
+          else await createNewDiagram(xml.value, editorSettings.value)
         } catch (e) {
           console.log(e)
         }
       },
       { deep: true, immediate: true }
     )
-
     return () => <div ref={designer} class="designer"></div>
   }
 })
-
 export default Designer

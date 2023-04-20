@@ -1,4 +1,4 @@
-import { ModuleDeclaration } from 'didi'
+import type { ModuleDeclaration } from 'didi'
 import enhancementPaletteProvider from './enhancementPaletteProvider'
 
 const EnhancementPalette: ModuleDeclaration = {

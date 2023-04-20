@@ -53,6 +53,7 @@ export default function (settings: Ref<EditorSettings>) {
   const options: { [key: string]: any } = {} // modeler 其他配置
 
   // 配置 palette (可覆盖 paletteProvider 取消原生侧边栏)
+  console.log('---settings.value---', settings.value)
   settings.value.paletteMode === 'enhancement' && modules.push(EnhancementPalette)
   settings.value.paletteMode === 'rewrite' && modules.push(RewritePalette)
   settings.value.paletteMode === 'custom' &&
@@ -82,20 +83,6 @@ export default function (settings: Ref<EditorSettings>) {
       options['propertiesPanel'] = { parent: '#camunda-penal' }
       moddle['camunda'] = camundaModdleDescriptors
     }
-    // if (settings.value.templateChooser) {
-    //   modules.push(
-    //     CloudElementTemplatesPropertiesProviderModule,
-    //     ElementTemplateChooserModule,
-    //     ConnectorsExtensionModule
-    //   )
-    //   options['exporter'] = {
-    //     name: 'element-template-chooser',
-    //     version: '0.0.1'
-    //   }
-    //   options['connectorsExtension'] = {
-    //     appendAnything: true
-    //   }
-    // }
   }
 
   // 设置 lint 校验

@@ -18,7 +18,6 @@ const Palette = defineComponent({
       }
       create.start(ev, shape)
     }
-
     return () => (
       <div class="palette">
         <NCollapse>

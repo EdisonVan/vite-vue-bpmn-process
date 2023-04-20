@@ -8,6 +8,7 @@ import Modeling from 'bpmn-js/lib/features/modeling/Modeling'
 import Canvas from 'diagram-js/lib/core/Canvas'
 import ElementRegistry from 'diagram-js/lib/core/ElementRegistry'
 import EnhancementContextmenu from '@/additional-functions/EnhancementContextmenu'
+import Logger from '@/utils/Logger'
 
 export default function (
   designer: Ref<HTMLElement | null>,
@@ -15,7 +16,7 @@ export default function (
   emit
 ) {
   const store = modelerStore()
-
+  Logger.prettyError('---modelerModules---', modelerModules[0])
   const options: ViewerOptions<Element> = {
     container: designer!.value as HTMLElement,
     additionalModules: modelerModules[0] || [],
@@ -41,7 +42,6 @@ export default function (
   modeler.on('commandStack.changed', async (event) => {
     try {
       const { xml } = await modeler.saveXML({ format: true })
-
       emit('update:xml', xml)
       emit('command-stack-changed', event)
     } catch (error) {

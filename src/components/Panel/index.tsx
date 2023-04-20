@@ -35,7 +35,7 @@ const Panel = defineComponent({
     const panel = ref<HTMLDivElement | null>(null)
     const currentElementId = ref<string | undefined>(undefined)
     const currentElementType = ref<string | undefined>(undefined)
-
+    // 在 modeler 实例化结束之后在创建监听函数 (也可以监听 modeler().getModeler 的值来创建)
     const penalTitle = ref<string | undefined>('属性配置')
     const bpmnIconName = ref<string>('Process')
     const bpmnElementName = ref<string>('Process')
