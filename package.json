@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite --force --open",
+    "dev": "vite --force --open --host",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "clean": "rimraf node_modules package-lock.json yarn.lock yarn-error.log && npm cache clean -f && yarn cache clean"
@@ -20,7 +20,7 @@
     "bpmn-js-token-simulation": "^0.31.0",
     "bpmnlint": "^8.1.1",
     "camunda-bpmn-moddle": "^7.0.1",
-    "diagram-js-minimap": "^4.0.1",
+    "diagram-js-minimap": "^4.1.0",
     "highlight.js": "^11.5.1",
     "lodash.debounce": "^4.0.8",
     "lucide-vue-next": "^0.68.0",
